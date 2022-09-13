@@ -1,0 +1,21 @@
+[package]
+edition = "2021"
+name = "hasher"
+version = "0.0.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+# Default enable napi4 feature, see https://nodejs.org/api/n-api.html#node-api-version-matrix
+napi = { version = "2.3.3", default-features = false, features = ["napi4"] }
+napi-derive = "2.3.2"
+sha256 = "1.0.3"
+num_cpus = "1.13.1"
+threadpool = "1.8.1"
+
+[build-dependencies]
+napi-build = "1.2.1"
+
+[profile.release]
+lto = true

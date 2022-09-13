@@ -1,0 +1,5 @@
+{
+	"name": "@{{project_name}/scripts",
+	"type": "module",
+	"dependencies": {}
+}

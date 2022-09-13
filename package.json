@@ -1,0 +1,12 @@
+{
+	"name": "@hashed-out/monorepo",
+	"scripts": {
+		"prepare": "lionconfig",
+		"build": "pnpm recursive run build"
+	},
+	"devDependencies": {
+		"lionconfig": "latest",
+		"@types/node": "latest",
+		"typescript": "latest"
+	}
+}
